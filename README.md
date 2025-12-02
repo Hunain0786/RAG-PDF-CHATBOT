@@ -1,119 +1,130 @@
-# PDF RAG Chatbot API
+# PDF RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) API that allows you to upload PDF documents and ask questions about their content. It uses **FastAPI** for the backend, **Pinecone** for vector storage, and **Hugging Face** models for embeddings and text generation.
+A full-stack Retrieval-Augmented Generation (RAG) application that allows you to upload PDF documents and ask questions about their content.
 
-## Architecture
+This project consists of two main components:
+- **Client**: A modern frontend built with **Next.js**.
+- **Server**: A robust backend API built with **FastAPI**, **Pinecone**, and **Hugging Face** models.
 
-```mermaid
-graph TD
-    subgraph Client
-        User[User]
-    end
+---
 
-    subgraph API["FastAPI Server"]
-        UploadEndpoint["/upload_pdf"]
-        AskEndpoint["/ask"]
-        PDFProcessor["PDF Processor"]
-        RAGEngine["RAG Engine"]
-    end
+## 📂 Project Structure
 
-    subgraph Services
-        Embedder["Embedding Model<br/>(all-MiniLM-L6-v2)"]
-        Pinecone["Pinecone Vector DB"]
-        LLM["LLM<br/>(Flan-T5)"]
-    end
+- **`Client/`**: Contains the frontend source code (Next.js, React, Tailwind CSS).
+- **`RAG_PDF_QnA_Chatbot/`**: Contains the backend source code (FastAPI, Python scripts).
 
-    %% Upload Flow
-    User -- Upload PDF --> UploadEndpoint
-    UploadEndpoint -- Extract & Chunk --> PDFProcessor
-    PDFProcessor -- Text Chunks --> UploadEndpoint
-    UploadEndpoint -- Generate Embeddings --> Embedder
-    Embedder -- Vectors --> UploadEndpoint
-    UploadEndpoint -- Upsert Vectors --> Pinecone
+---
 
-    %% Ask Flow
-    User -- Ask Question --> AskEndpoint
-    AskEndpoint -- Process Query --> RAGEngine
-    RAGEngine -- Embed Query --> Embedder
-    Embedder -- Query Vector --> RAGEngine
-    RAGEngine -- Retrieve Context --> Pinecone
-    Pinecone -- Relevant Chunks --> RAGEngine
-    RAGEngine -- Prompt + Context --> LLM
-    LLM -- Answer --> RAGEngine
-    RAGEngine -- Response --> AskEndpoint
-    AskEndpoint -- JSON Response --> User
-```
+## 🚀 Getting Started
 
-## Features
+Follow these instructions to set up and run both the backend and frontend locally.
 
--   **PDF Ingestion**: Upload PDF files to extract text and chunk it for processing.
--   **Vector Search**: Uses Pinecone to store and retrieve relevant text chunks based on semantic similarity.
--   **Question Answering**: Generates answers using the `google/flan-t5-base` LLM, grounded in the retrieved context.
--   **Modular Design**: Clean separation of concerns (API, Config, PDF Processing, RAG Engine).
+### Prerequisites
 
-## Tech Stack
+- **Node.js** (v18 or higher)
+- **Python** (v3.8 or higher)
+- **Pinecone API Key** (Sign up at [pinecone.io](https://www.pinecone.io/))
 
--   **Framework**: FastAPI
--   **Vector Database**: Pinecone
--   **Embeddings**: `sentence-transformers/all-MiniLM-L6-v2`
--   **LLM**: `google/flan-t5-base`
--   **PDF Processing**: pypdf
+---
 
-## Installation
+### 1️⃣ Backend Setup (Server)
 
-1.  **Clone the repository:**
+1.  **Navigate to the server directory:**
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    cd RAG_PDF_QnA_Chatbot
     ```
 
-2.  **Install dependencies:**
+2.  **Create and activate a virtual environment (optional but recommended):**
+    ```bash
+    # Windows
+    python -m venv venv
+    venv\Scripts\activate
+
+    # macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  **Install Python dependencies:**
     ```bash
     pip install -r requirements.txt
-    pip install python-dotenv
     ```
 
-3.  **Set up Environment Variables:**
-    Create a `.env` file in the root directory and add your Pinecone API key:
+4.  **Set up Environment Variables:**
+    Create a `.env` file in the `RAG_PDF_QnA_Chatbot` directory and add your Pinecone API key:
     ```env
     PINECONE_API_KEY=your_pinecone_api_key_here
     ```
 
-## Usage
-
-1.  **Start the server:**
+5.  **Start the Backend Server:**
     ```bash
     uvicorn main:app --reload
     ```
+    The server will start at `http://localhost:8000`.
+    - API Docs: `http://localhost:8000/docs`
 
-2.  **API Endpoints:**
+---
 
-    -   **`GET /`**: Health check. Returns a welcome message.
-    -   **`POST /upload_pdf`**: Upload a PDF file to be indexed.
-        -   **Body**: `form-data` with key `pdf` and file value.
-    -   **`POST /ask`**: Ask a question about the uploaded PDF.
-        -   **Body**: JSON object `{"query": "Your question here"}`
+### 2️⃣ Frontend Setup (Client)
 
-## Docker Setup
-
-You can also run this application using Docker.
-
-1.  **Build the Docker image:**
+1.  **Open a new terminal and navigate to the client directory:**
     ```bash
+    cd Client
+    ```
+
+2.  **Install Node.js dependencies:**
+    ```bash
+    npm install
+    # or
+    pnpm install
+    ```
+
+3.  **Start the Frontend Development Server:**
+    ```bash
+    npm run dev
+    # or
+    pnpm dev
+    ```
+    The application will be available at `http://localhost:3000`.
+
+---
+
+## 🛠 Architecture & Tech Stack
+
+### Backend (Server)
+-   **Framework**: FastAPI
+-   **Vector DB**: Pinecone
+-   **Embeddings**: `sentence-transformers/all-MiniLM-L6-v2`
+-   **LLM**: `google/flan-t5-base`
+-   **PDF Processing**: pypdf
+
+### Frontend (Client)
+-   **Framework**: Next.js, Typescript
+-   **Styling**: Tailwind CSS
+-   **UI Components**: Radix UI / Shadcn UI
+
+---
+
+## ✨ Features
+
+-   **PDF Ingestion**: Upload PDF files to extract text and chunk it for processing.
+-   **Vector Search**: Uses Pinecone to store and retrieve relevant text chunks based on semantic similarity.
+-   **Question Answering**: Generates answers using the `google/flan-t5-base` LLM, grounded in the retrieved context.
+-   **Interactive UI**: Chat interface to interact with your documents easily.
+
+---
+
+## 🐳 Docker Setup (Optional)
+
+You can run the backend using Docker.
+
+1.  **Build the image:**
+    ```bash
+    cd RAG_PDF_QnA_Chatbot
     docker build -t pdf-rag-app .
     ```
 
-2.  **Run the Docker container:**
-    Make sure you have your `.env` file set up as described in the Installation section.
+2.  **Run the container:**
     ```bash
     docker run -p 8000:8000 --env-file .env pdf-rag-app
     ```
-    The API will be available at `http://localhost:8000`.
-
-## Project Structure
-
--   `main.py`: FastAPI application and route definitions.
--   `config.py`: Configuration and initialization of services (Pinecone, Models).
--   `pdf_processor.py`: Logic for extracting and chunking text from PDFs.
--   `rag_engine.py`: Core RAG logic (Retrieval + Generation).
--   `requirements.txt`: Python dependencies.
