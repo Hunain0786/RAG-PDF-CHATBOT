@@ -8,16 +8,6 @@ This project consists of two main components:
 
 ---
 
-## Working Images
-
-### Upload PDF
-![Upload PDF](image-1.png)
-
-### Ask Question
-![Ask Question](image.png)
-
----
-
 ## Project Structure
 
 - **`Client/`**: Contains the frontend source code (Next.js, React, Tailwind CSS).
