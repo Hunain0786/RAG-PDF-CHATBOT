@@ -8,14 +8,24 @@ This project consists of two main components:
 
 ---
 
-## 📂 Project Structure
+## Working Images
+
+### Upload PDF
+![Upload PDF](image-1.png)
+
+### Ask Question
+![Ask Question](image.png)
+
+---
+
+## Project Structure
 
 - **`Client/`**: Contains the frontend source code (Next.js, React, Tailwind CSS).
 - **`RAG_PDF_QnA_Chatbot/`**: Contains the backend source code (FastAPI, Python scripts).
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to set up and run both the backend and frontend locally.
 
@@ -27,7 +37,7 @@ Follow these instructions to set up and run both the backend and frontend locall
 
 ---
 
-### 1️⃣ Backend Setup (Server)
+### Backend Setup (Server)
 
 1.  **Navigate to the server directory:**
     ```bash
@@ -65,7 +75,7 @@ Follow these instructions to set up and run both the backend and frontend locall
 
 ---
 
-### 2️⃣ Frontend Setup (Client)
+### Frontend Setup (Client)
 
 1.  **Open a new terminal and navigate to the client directory:**
     ```bash
@@ -89,7 +99,7 @@ Follow these instructions to set up and run both the backend and frontend locall
 
 ---
 
-## 🛠 Architecture & Tech Stack
+## Architecture & Tech Stack
 
 ### Backend (Server)
 -   **Framework**: FastAPI
@@ -105,7 +115,7 @@ Follow these instructions to set up and run both the backend and frontend locall
 
 ---
 
-## ✨ Features
+## Features
 
 -   **PDF Ingestion**: Upload PDF files to extract text and chunk it for processing.
 -   **Vector Search**: Uses Pinecone to store and retrieve relevant text chunks based on semantic similarity.
