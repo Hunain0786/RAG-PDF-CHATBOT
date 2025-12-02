@@ -1,0 +1,3 @@
+[submodule "RAG_PDF_QnA_Chatbot"]
+	path = RAG_PDF_QnA_Chatbot
+	url = https://github.com/Hunain0786/RAG_PDF_QnA_Chatbot.git

@@ -1,0 +1,143 @@
+[00:00:07.119] Server  LOG     
+[00:00:07.119] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:07.120] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:07.120] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:07.120] Server  LOG     
+[00:00:07.120] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:07.121] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:07.121] Server  LOG     
+[00:00:07.489] Server  LOG      ✓ Ready in 6.7s
+[00:00:45.893] Server  LOG      ○ Compiling / ...
+[00:00:49.934] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:50.155] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:50.155] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:50.155] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764645982365}
+[00:00:52.615] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764645984835}
+[00:01:38.741] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646030959}
+[00:01:40.290] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646032511}
+[00:01:57.988] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646050201}
+[00:01:59.441] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646051668}
+[00:02:15.853] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646068076}
+[00:02:19.027] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646071237}
+[00:02:35.691] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646087908}
+[00:03:01.553] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646113784}
+[00:04:34.084] Server  LOG      ✓ Compiled in 65ms
+[00:04:42.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646215029}
+[00:04:44.892] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646217123}
+[00:05:15.794] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646248021}
+[00:07:09.487] Server  ERROR   C:\Users\SAKIB SHAIKH\Desktop\projec\rag-pdf-chatbot-ui\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:07:09.491] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toString')
+[00:07:09.556] Server  ERROR   C:\Users\SAKIB SHAIKH\Desktop\projec\rag-pdf-chatbot-ui\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:07:09.558] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'toString')
+[00:07:09.743] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toString')
+[00:07:16.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:17.025] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:17.025] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:17.025] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646369018}
+[00:07:18.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:18.302] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:18.302] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:07:18.302] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646370543}
+[00:07:35.189] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646387432}
+[00:07:48.763] Server  LOG      ✓ Compiled in 79ms
+[00:08:01.652] Server  LOG      ✓ Compiled in 69ms
+[00:08:01.756] Browser ERROR   ./app/chat/page.tsx:50:16
+Parsing ecmascript source code failed
+  48 |                 //   </button>
+  49 |                 // </Link>
+> 50 |               )}
+     |                ^
+  51 |               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+  52 |                 <div className="w-4 h-4 border border-primary-foreground rounded-sm" />
+  53 |               </div>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/chat/page.tsx [Client Component Browser]
+    ./app/chat/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/chat/page.tsx [Client Component SSR]
+    ./app/chat/page.tsx [Server Component]
+[00:08:16.985] Server  LOG      ✓ Compiled in 51ms
+[00:08:17.742] Browser ERROR   ./app/chat/page.tsx:73:1
+Parsing ecmascript source code failed
+  71 |     </main>
+  72 |   )
+> 73 | }
+     | ^
+  74 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./app/chat/page.tsx [Client Component Browser]
+    ./app/chat/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/chat/page.tsx [Client Component SSR]
+    ./app/chat/page.tsx [Server Component]
+[00:08:31.080] Server  LOG      ✓ Compiled in 72ms
+[00:08:33.035] Server  LOG      ✓ Compiled in 39ms
+[00:08:35.697] Server  LOG      ✓ Compiled in 71ms
+[00:08:38.825] Server  LOG      ✓ Compiled in 53ms
+[00:09:11.034] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:11.201] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:11.201] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/chat","route":"/chat"}
+[00:09:11.201] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646483457}
+[00:09:16.413] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:16.561] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:16.561] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:09:16.561] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646488804}
+[00:10:00.890] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:01.016] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:01.016] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:10:01.016] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646533272}
+[00:10:09.223] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646541472}
+[00:10:13.620] Server  LOG      ✓ Compiled in 40ms
+[00:10:28.424] Server  LOG      ✓ Compiled in 59ms
+[00:10:40.499] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646572750}
+[00:10:44.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:44.653] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:44.653] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:10:44.653] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646576918}
+[00:11:06.669] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646598933}
+[00:11:31.121] Server  LOG      ✓ Compiled in 50ms
+[00:11:37.416] Server  LOG      ✓ Compiled in 45ms
+[00:11:49.534] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:49.667] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:49.667] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:11:49.667] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646641935}
+[00:12:03.909] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646656177}
+[00:12:04.971] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646657236}
+[00:12:06.177] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646658445}
+[00:12:34.444] Server  ERROR   C:\Users\SAKIB SHAIKH\Desktop\projec\rag-pdf-chatbot-ui\.next\dev\server\chunks\ssr\[root-of-the-server]__5e55bc78._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:34.447] Server  ERROR    ⨯ ReferenceError: Analytics is not defined
+[00:12:34.479] Server  ERROR   C:\Users\SAKIB SHAIKH\Desktop\projec\rag-pdf-chatbot-ui\.next\dev\server\chunks\ssr\[root-of-the-server]__5e55bc78._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:34.480] Server  ERROR    ⨯ ReferenceError: Analytics is not defined
+[00:12:34.725] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:34.725] Browser ERROR   uncaughtError: ReferenceError: Analytics is not defined
+[00:12:45.983] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:12:46.103] Server  ERROR   C:\Users\SAKIB SHAIKH\Desktop\projec\rag-pdf-chatbot-ui\.next\dev\server\chunks\ssr\[root-of-the-server]__5e55bc78._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:46.104] Server  ERROR    ⨯ ReferenceError: Analytics is not defined
+[00:12:46.176] Server  LOG      ✓ Compiled in 55ms
+[00:12:46.387] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:46.387] Browser ERROR   uncaughtError: ReferenceError: Analytics is not defined
+[00:12:52.992] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:12:53.114] Server  ERROR   C:\Users\SAKIB SHAIKH\Desktop\projec\rag-pdf-chatbot-ui\.next\dev\server\chunks\ssr\[root-of-the-server]__5e55bc78._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:53.115] Server  ERROR    ⨯ ReferenceError: Analytics is not defined
+[00:12:53.176] Server  LOG      ✓ Compiled in 60ms
+[00:12:53.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:53.367] Browser ERROR   uncaughtError: ReferenceError: Analytics is not defined
+[00:13:00.432] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:13:00.813] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:00.973] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:00.973] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/chat","route":"/chat"}
+[00:13:00.973] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chat color: rgb(120, 120, 120) color: inherit {"dp":"/chat","o":"http://localhost:3000/chat","sdkn":"@vercel/analytics/next","sdkv":"1.6.0","sv":"0.1.3","ts":1764646713233}
+[00:13:47.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:41:52.273] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
