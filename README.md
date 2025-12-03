@@ -8,6 +8,14 @@ This project consists of two main components:
 
 ---
 
+
+# Working Image
+
+<img width="1366" height="600" alt="image" src="https://github.com/user-attachments/assets/f2126f4d-c306-43c3-b813-5a3f9057eab8" />
+
+---
+
+
 ## Project Structure
 
 - **`Client/`**: Contains the frontend source code (Next.js, React, Tailwind CSS).
